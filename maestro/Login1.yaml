@@ -1,0 +1,12 @@
+appId: com.swaglabsmobileapp
+---
+- launchApp:
+    clearState: true
+- waitForAnimationToEnd
+- tapOn: test-Username
+- inputText: standard_user
+- tapOn: Password
+- inputText: secret_sauce
+- tapOn: test-LOGIN
+- tapOn: test-Menu
+- tapOn: LOGOUT

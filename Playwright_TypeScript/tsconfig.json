@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Language and Module Options */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+
+    /* Type Checking */
+    "strict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    
+    /* Emit (Output) Options */
+    "outDir": "./dist", /* Not strictly necessary for Playwright, but good practice */
+    "noEmit": true, /* Playwright handles compilation internally, so we don't need TypeScript to create JS files */
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Completeness */
+    "skipLibCheck": true /* Highly recommended to speed up compilation by ignoring type checks on dependency files */
+  },
+  "include": [
+    "tests/**/*.ts", 
+    "pages/**/*.ts", 
+    "utils/**/*.ts", 
+    "playwright.config.ts"
+  ]
+}
